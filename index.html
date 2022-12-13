@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="work.css">
+</head>
+<body> 
+<!-- partial:index.partial.html -->
+    <nav>
+           <ul>
+               <li><a class="active" href="index.html">Home page</a></li>
+               <li><a href="course details.html">course details</a></li>
+               <li><a href="information.html">information</a></li>
+           </ul>
+    </nav>
+   
+
+
+    <head>
+        <style>
+        
+        body {
+          font-family:Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        .header {
+          grid-area: header;
+          background-color: #10aff3;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+        }
+        
+        /* The grid container */
+        .grid-container {
+          display: grid;
+          grid-template-areas: 
+            'header header header header header header' 
+            'left left middle middle right right' 
+            'footer footer footer footer footer footer';
+          /* grid-column-gap: 10px; - if you want gap between the columns */
+        } 
+        
+        .left,
+        .middle,
+        .right {
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Style the left column */
+        .left {
+          grid-area: left;
+        }
+        
+        /* Style the middle column */
+        .middle {
+          grid-area: middle;
+        }
+        
+        /* Style the right column */
+        .right {
+          grid-area: right;
+        }
+        
+        /* Style the footer */
+        .footer {
+          grid-area: footer;
+          background-color: #e88b5f;
+          padding: 10px;
+          text-align: center;
+        }
+        
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+          .grid-container  {
+            grid-template-areas: 
+              'header header header header header header' 
+              'left left left left left left' 
+              'middle middle middle middle middle middle' 
+              'right right right right right right' 
+              'footer footer footer footer footer footer';
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>HOME PAGE</h1>
+
+        English name:Shine
+        Pinyin:ChenShanshan
+        
+        <p>Vocational and technical school</p>
+        <img src='School logo.png' width="300" height="300" >
+        <img src='RTO.jpg' width="300" height="300">
+       
+        <p>Registered training organization (RTO)is a training provider registered with asqa (or state  regulatory authority) ànd providing vocal education and training (VET) services.
+            
+            If RTO only operates and provides training in Western Australia and/ or Victoria, it needs to be registered in the relevant state. Only RTO can provide:
+            
+            Provide Australian recognized vocational training(VET) courses;
+            
+            Awarding Australian qualification framework (AQF) certified degrees;
+            
+            Apply for funding from Australia, states and territories to vet.</p>
+       
+        
+        <div class="grid-container">
+          <div class="header">
+            <h1>HOME PAGE</h1>
+          </div>
+          
+          <div class="left" style="background-color:#aaa;">course details</div>
+          <div class="middle" style="background-color:#bbb;">information</div>  
+          <div class="right" style="background-color:#ccc;">Website structure</div>
+          
+          <div class="footer">
+          <p> contact page witha link: htps://s.bcc.cn/</p>
+          </div>
+        </div>
+        
+        </body>
+   
+</body>
+</div>
+</html>
