@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="work.css">
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home page</a></li>
+            <li><a href="course details.html">course details</a></li>
+            <li><a href="information.html">information</a></li>
+        </ul>
+ </nav>
+
+
+ <head>
+    <style>
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+      gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+    
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>English name:Shine
+        Pinyin:ChenShanshan</h2>
+    
+    <a href="https://cn.bing.com/maps?&ty=18&q=%E5%AE%81%E6%B3%A2%E5%9F%8E%E5%B8%82%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2&ss=ypid.YN4067x7522117285520854926&ppois=29.808395385742188_121.5712890625_%E5%AE%81%E6%B3%A2%E5%9F%8E%E5%B8%82%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2_YN4067x7522117285520854926~&cp=nz17scv3xvd0&lvl=16&v=2&sV=1&FORM=SNAPST ">school map</a>
+    
+    <div class="grid-container">
+      <div class="item1">Information</div>
+      <div class="item2">Name</div>
+      <div class="item3">Address</div>  
+      <div class="item4">Telephone number</div>
+      <div class="item5">Email address</div>
+    </div>
+    <script src="a.js"></script>
+    
+    <img src='address.jpg' width="800"  height="600">
+    
+    <div class="form1">
+      <form form1="myform" method="post" 
+      action="mailto:choucChotmail.com" onsubmit="returnvalidateform()" >  
+     Name: <input type="text" name="name"><br/>  
+     Gender: <input type="text" name=" gender"><br/>  
+     Problem: <input type="text" name="problem"><br/>  
+     Telephone number: <input type="number" name="telephonenumber"><br/>  
+     <input type="submit" value="register">  
+    </form> 
+</div>
+
+
+
+
+
+<form onsubmit="return validateForm()" action="" method="post">
+  <script src="b.js"></script>
+  <fieldset class="bb1">
+      <legend>register:</legend>
+      <div class="row">
+          <label>username:</label>
+          <input type="text" class="mytext" name="name">
+          <span class="error" id="nameErr"></span>
+      </div>
+      <div class="row">
+          <label>password:</label>
+          <input type="password" class="mytext" name="pwd">
+          <span class="error" id="pwdErr"></span>
+      </div>
+      <div class="row">
+          <label>Email:</label>
+          <input type="text" class="mytext"  name="email">
+          <span class="error" id="emailErr"></span>
+      </div>
+      <div class="row">
+          <label>cell-phone number:</label>
+          <input type="text" class="mytext"  name="mobile" maxlength="11">
+          <span class="error" id="mobileErr"></span>
+      </div>
+      <div class="row">
+          <label>Verification Code:</label>
+          <input type="text" class="mytext" name="captcha" maxlength="4"><span id="captcha" onclick="getCaptcha()"></span>
+          <span class="error" id="captchaErr"></span>
+      </div>
+      <div class="row">
+          <input type="submit" class="mytext" value="register">
+      </div>
+  </fieldset>
+</form>
+
+
+    </body>
+
+</body>
+</div>
+</html>
